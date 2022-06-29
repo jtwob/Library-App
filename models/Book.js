@@ -29,7 +29,7 @@ const bookSchema = new mongoose.Schema({
     type: Boolean,
     required: true,
     default: false,
-  }
+  },
 });
 
 var Book = mongoose.model("Book", bookSchema);

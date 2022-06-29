@@ -1,12 +1,12 @@
 const router = require("express").Router();
 const { route } = require("express/lib/application");
 const {
-    getAll,
-    getOneById,
-    getOne,
-    updateOne,
-    postOne,
-    deleteOne
+  getAll,
+  getOneById,
+  getOne,
+  updateOne,
+  postOne,
+  deleteOne,
 } = require("../controllers/bookController");
 
 router.get("/", getAll);

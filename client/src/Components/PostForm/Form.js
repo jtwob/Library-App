@@ -9,40 +9,40 @@ const Form = (props) => {
         <input
           name="title"
           type="text"
-          //   value={this.state.title}
-          //   onChange={props.state(value)}
+          // value={""}
+          onChange={(event) => props.handler(event)}
         />
         <br />
         <label>Author: </label>
         <input
           name="author"
           type="text"
-          // value={this.state.title}
-          // onChange={this.handleInputChange}
+          // value={""}
+          onChange={(event) => props.handler(event)}
         />
         <br />
         <label>Page Count: </label>
         <input
           name="pageCount"
           type="number"
-          // value={this.state.title}
-          // onChange={this.handleInputChange}
+          // value={-1}
+          onChange={(event) => props.handler(event)}
         />
         <br />
         <label>ISBN: </label>
         <input
           name="isbn"
           type="text"
-          // value={this.state.title}
-          // onChange={this.handleInputChange}
+          // value={""}
+          onChange={(event) => props.handler(event)}
         />
         <br />
         <label>Owner ID: </label>
         <input
           name="ownerId"
           type="text"
-          // value={this.state.title}
-          // onChange={this.handleInputChange}
+          // value={""}
+          onChange={(event) => props.handler(event)}
         />
       </form>
     </div>

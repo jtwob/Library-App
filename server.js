@@ -1,10 +1,11 @@
 const express = require("express");
+const bodyParser = require("body-parser");
 const app = express();
 const PORT = process.env.PORT || 8080;
 const mongoose = require("mongoose");
 
-app.use(express.urlencoded({ extended: true }));
-app.use(express.json());
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
 
 mongoose.connect(
   process.env.MONGODB_URI || "mongodb://localhost/books",

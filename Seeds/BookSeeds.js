@@ -18,14 +18,14 @@ let bookSeed = [
     title: "Book 2",
     author: "James",
     pageCount: 200,
-    ISBN: "03d033ddP",
+    ISBN: "93492hff",
     ownerId: "James",
   },
   {
     title: "Book 3",
     author: "James",
     pageCount: 388,
-    ISBN: "03d033ddP",
+    ISBN: "14091294jf",
     ownerId: "James",
   },
 ];

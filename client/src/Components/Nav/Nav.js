@@ -7,7 +7,9 @@ function Nav() {
         My Books
       </a>
       <br />
-      <a href="/home">New Book</a>
+      <a className="navbar-brand" href="/home">
+        New Book
+      </a>
     </nav>
   );
 }

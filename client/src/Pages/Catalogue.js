@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import BookCard from "../Components/BookCard/BookCard";
+import Row from "react-bootstrap/Row";
 
 const Catalogue = () => {
   const [books, setBooks] = useState({
@@ -20,11 +22,29 @@ const Catalogue = () => {
 
   return (
     <div>
-      <h1>Catalogue</h1>
-      {console.log(books)}
-      {books.array.map(function (book, i) {
-        return <h4>{book.title}</h4>;
-      })}
+      <div
+        style={{
+          padding: "35px",
+          display: "flex",
+          justifyContent: "space-between",
+        }}
+      >
+        <h1>Catalogue</h1>
+        {console.log(books)}
+        <Row xs={2} md={3} className="g-4">
+          {books.array.map(function (book, i) {
+            return (
+              // <h4>{book.title}</h4>;
+              <BookCard
+                title={book.title}
+                author={book.author}
+                pageCount={book.pageCount}
+                completed={book.completed}
+              />
+            );
+          })}
+        </Row>
+      </div>
     </div>
   );
 };

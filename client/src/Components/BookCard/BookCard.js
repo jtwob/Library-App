@@ -3,7 +3,7 @@ import Card from "react-bootstrap/Card";
 
 const BookCard = (props) => {
   return (
-    <Card style={{ width: "18rem", marginRight: "25px" }}>
+    <Card style={{ width: "18rem", marginRight: "10px", marginTop: "10px" }}>
       <Card.Body>
         <Card.Title>{props.title}</Card.Title>
         <Card.Subtitle className="mb-2 text-muted">

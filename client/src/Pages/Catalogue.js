@@ -21,17 +21,28 @@ const Catalogue = () => {
   }, []);
 
   return (
-    <div>
+    <div
+      style={
+        {
+          // padding: "35px",
+          // display: "flex",
+          // justifyContent: "space-between",
+        }
+      }
+    >
+      <h1 style={{ textAlign: "center" }}>Catalogue</h1>
+      {console.log(books)}
       <div
+        // className="g-4"
         style={{
+          backgroundColor: "cyan",
           padding: "35px",
           display: "flex",
-          justifyContent: "space-between",
+          alignItems: "center",
+          justifyContent: "center",
         }}
       >
-        <h1>Catalogue</h1>
-        {console.log(books)}
-        <Row xs={2} md={3} className="g-4">
+        <Row xs={2} md={3}>
           {books.array.map(function (book, i) {
             return (
               // <h4>{book.title}</h4>;
